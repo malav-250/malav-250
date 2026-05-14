@@ -3,13 +3,22 @@
 
 <p align="center">
   <a href="https://malavgajera.is-a.dev">
-    <img src="https://img.shields.io/badge/Portfolio-malavgajera.is--a.dev-06b6d4?style=flat&logo=vercel&logoColor=white" alt="Portfolio" />
+    <img src="https://img.shields.io/badge/Portfolio-malavgajera.is--a.dev-06b6d4?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
   </a>
+  <a href="https://malavgajera.is-a.dev/blog">
+    <img src="https://img.shields.io/badge/Blog-Notes_on_backend_systems-3b82f6?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Blog" />
+  </a>
+</p>
+
+<p align="center">
   <a href="https://www.linkedin.com/in/malav-gajera-884003202/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:gajera.ma@northeastern.edu">
     <img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://malavgajera.is-a.dev/resume.pdf">
+    <img src="https://img.shields.io/badge/Resume-PDF-1f2937?style=flat&logo=adobeacrobatreader&logoColor=white" alt="Resume" />
   </a>
 </p>
 
@@ -18,9 +27,56 @@
 ### About
 
 MS in Computer Software Engineering @ **Northeastern University** (3.9 GPA), graduating **December 2026**.
-Currently a **Software Engineer Co-op** at **Crewasis**, shipping production backend systems weekly.
+Currently a **Software Engineer Co-op** at **Crewasis**, building AI-marketing infrastructure.
 
 I focus on backend services, cloud infrastructure, and the CI/CD that ties them together — Python, Java, AWS, PostgreSQL, Terraform.
+
+**Open to full-time Backend / Cloud Engineering roles starting January 2027.**
+
+---
+
+### Featured case studies
+
+Each project has a written case study with architecture diagrams, key decisions, and trade-offs.
+
+<table>
+  <tr>
+    <td valign="top" width="50%">
+      <h4>🚀 <a href="https://malavgajera.is-a.dev/projects/distributed-task-queue">Distributed Task Queue</a></h4>
+      <p><b>Celery + RabbitMQ — Circuit Breakers, Observability, Terraform</b></p>
+      <p>Production-grade task queue with dead-letter routing, idempotency keys, Redis-backed circuit breakers, and a Prometheus/Grafana observability stack. 8 services containerized via Docker Compose, deployed to ECS Fargate via Terraform.</p>
+      <p><a href="https://github.com/malav-250/distributed-task-queue">Repo</a> · <a href="https://malavgajera.is-a.dev/projects/distributed-task-queue">Case study</a> · <a href="https://malavgajera.is-a.dev/blog/dead-letter-routing">Blog post</a></p>
+    </td>
+    <td valign="top" width="50%">
+      <h4>📞 <a href="https://malavgajera.is-a.dev/projects/voice-agent">Real-Time AI Voice Agent</a></h4>
+      <p><b>Sub-Second Phone Conversations — Streaming STT + LLM + TTS</b></p>
+      <p>Voice agent handling real phone calls. Streaming pipeline over Twilio Media Streams with interrupt-aware router + barge-in support, so the caller can cut the agent off mid-sentence.</p>
+      <p><a href="https://github.com/malav-250/deepgram-voice-agent">Repo</a> · <a href="https://malavgajera.is-a.dev/projects/voice-agent">Case study</a></p>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" width="50%">
+      <h4>☁️ <a href="https://malavgajera.is-a.dev/projects/cloud-native-app">Resilient Cloud Deployment Platform</a></h4>
+      <p><b>Full AWS Stack — Terraform IaC, Multi-AZ, Blue-Green CI/CD</b></p>
+      <p>3-repo platform: FastAPI service, Terraform IaC for the full AWS topology, and serverless email verification. Multi-AZ Auto Scaling Group behind an ALB with blue-green deployments via AMI bake.</p>
+      <p><a href="https://github.com/malav-250/cloud-webapp">Web</a> · <a href="https://github.com/malav-250/cloud-tf-aws-infra">Infra</a> · <a href="https://github.com/malav-250/cloud-serverless">Serverless</a> · <a href="https://malavgajera.is-a.dev/projects/cloud-native-app">Case study</a></p>
+    </td>
+    <td valign="top" width="50%">
+      <h4>🚗 <a href="https://malavgajera.is-a.dev/projects/transportation-platform">Vehicle Rental Microservices Platform</a></h4>
+      <p><b>Spring Boot — Concurrent Booking with Transactional Locks</b></p>
+      <p>Ride-booking platform on Spring Boot microservices. Row-level pessimistic locks prevent double-booking under contention; Redis caches the high-read paths so the database isn&apos;t hammered.</p>
+      <p><a href="https://github.com/malav-250/transportation-platform">Repo</a> · <a href="https://malavgajera.is-a.dev/projects/transportation-platform">Case study</a></p>
+    </td>
+  </tr>
+</table>
+
+---
+
+### Latest writing
+
+[![Latest blog post](https://img.shields.io/badge/📝_Latest-Designing_dead--letter_routing_for_a_distributed_task_queue-06b6d4?style=for-the-badge)](https://malavgajera.is-a.dev/blog/dead-letter-routing)
+
+Why naive Celery retries silently drop messages, and the RabbitMQ DLX patterns that keep every failure observable and replayable. → [Read on the blog](https://malavgajera.is-a.dev/blog/dead-letter-routing)
 
 ---
 
@@ -35,7 +91,7 @@ I focus on backend services, cloud infrastructure, and the CI/CD that ties them 
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
 
-**Backend frameworks**
+**Backend &amp; APIs**
 
 ![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
@@ -63,19 +119,7 @@ I focus on backend services, cloud infrastructure, and the CI/CD that ties them 
 
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)
-
----
-
-### Featured projects
-
-| Project | Description | Stack |
-|---------|-------------|-------|
-| [Distributed Task Queue](https://github.com/malav-250/distributed-task-queue) | Production task queue with dead-letter routing, idempotency, circuit breakers, Prometheus/Grafana observability, Terraform-deployed to ECS Fargate | FastAPI · Celery · RabbitMQ · Redis · Prometheus · Terraform |
-| [Cloud Infrastructure Platform](https://github.com/malav-250/cloud-webapp) | Production FastAPI app across 3 repos — Terraform IaC, multi-AZ Auto Scaling, blue-green deploys, serverless email pipeline | AWS · Terraform · FastAPI · Packer · Lambda · SNS |
-| [Distributed Training Pipeline](https://github.com/malav-250/distributed-training-pipeline) | Multi-GPU training with PyTorch DDP across 3 GPUs, HDF5 ETL pipeline (25× faster I/O), W&amp;B observability | PyTorch DDP · HDF5 · ETL · W&amp;B |
-| [PaperVet — Compliance AI](https://github.com/malav-250/Harvard-Rare-Disease-Hackathon-2025) | MINeD 2025 Hackathon (3rd place) — OCR + CV pipeline that audits research papers against submission templates | Python · OpenCV · PyTesseract |
-| [AI Voice Agent](https://github.com/malav-250/deepgram-voice-agent) | Real-time conversational AI over phone — Deepgram STT/TTS + LLM with sub-second latency | Python · Deepgram · Twilio · LLM |
-| [Air Chords](https://github.com/malav-250/Air-Chords) | Vision-based musical interface — hand gestures to live MIDI chords via OpenCV | Python · OpenCV · MIDI |
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-425CC7?style=flat&logo=opentelemetry&logoColor=white)
 
 ---
 
@@ -91,5 +135,5 @@ I focus on backend services, cloud infrastructure, and the CI/CD that ties them 
 <p align="center">
   <i>Open to full-time <b>Backend / Cloud Engineering</b> roles starting <b>January 2027</b>.</i>
   <br/>
-  <a href="https://malavgajera.is-a.dev"><b>malavgajera.is-a.dev</b></a>
+  📩 <a href="mailto:gajera.ma@northeastern.edu">gajera.ma@northeastern.edu</a> · <a href="https://malavgajera.is-a.dev"><b>malavgajera.is-a.dev</b></a>
 </p>
